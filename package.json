@@ -1,0 +1,16 @@
+{
+  "name": "jest-mongoose-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "model.js",
+  "dependencies": {
+    "jest": "^19.0.2",
+    "mongoose": "^4.8.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
