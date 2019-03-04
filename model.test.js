@@ -1,7 +1,13 @@
 const Test = require('./model')
 
-jest.mock('./model')
+jest.mock('./model', () => {
+    return {
+        findOne: jest.fn(() => Promise.resolve(""))
+    }
+})
 
-// Test.findOne.mockImplementation = () => {
-//   ...
-// }
+test("test", async () => {
+    var result = await Test.findOne();
+
+    expect(result).toBe("");
+})
